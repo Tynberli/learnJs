@@ -1,16 +1,6 @@
-//const question = prompt('Добрый день');
-let languageWindow = navigator.language;
-//console.log(languageWindow)
-switch (languageWindow) {
-    case "ru":
-        console.log('Добрый день');
-        break;
-    case "en-US":
-        console.log('Hello!');
-        break;
-    case "de-DE":
-        console.log('Gutten tag');
-        break;
-    default:
-        console.log(undefined);
-}
+let hasLicence = true;
+let age = 21;
+let isDrunk = false;
+
+let canDrive = (hasLicence && age >= 18 && !isDrunk);
+console.log(`${canDrive ? 'Может' : 'Не может'} водить машину`);
