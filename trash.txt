@@ -54,3 +54,204 @@ const age = '18';
 console.log(Number(age) + 5);
 console.log(Boolean('5') + 9); */
 
+/* const money = 10;
+//const canBuy = money >= 50;
+if (money >= 50) {
+    console.log('Может купить наш продукт');
+} else if (money > 5) {
+    console.log('куплен мини продукт');
+} else {
+    console.log('не может');
+} */
+/* 
+const deposit = 12000;
+const rate = 0.07;
+const depositLenght = 24;
+const priceHouse = 13500;
+
+const capitalisation = deposit * (1 + rate / 12) ** depositLenght;
+//const capitalisation = (deposit * 0.07) * 2;
+console.log(capitalisation);
+//const depositEnd = deposit + capitalisation;
+if (capitalisation >= priceHouse) {
+    console.log(`Вася сможет купить дом. Останется ${capitalisation - priceHouse}$`);
+} else {
+    console.log(`Вася не сможет купить дом. Нехватает ${priceHouse - capitalisation}$`);
+}
+
+ */
+
+/* const role = 'manager';
+
+if (role === 'manager') {
+    console.log('Менеджер')
+} else if (role === 'admin') {
+    console.log('админ')
+} else if (role === 'ceo') {
+    console.log('CEO')
+} else {
+    console.log('Мы тебя не знаем')
+}
+
+
+switch (role) {
+    case 'manager'://role === 'manager'
+        console.log('Менеджер');
+        break;
+    case 'admin':
+        console.log('Админ');
+        break;
+    case 'ceo':
+        console.log('CEO');
+        break;
+    default:
+        console.log('Мы тебя не знаем');
+}
+
+
+switch (role) {
+    case 'manager':
+    case 'admin':
+        console.log('НЕ босс');
+        break;
+    case 'ceo':
+        console.log('CEO');
+        break;
+    default:
+        console.log('Мы тебя не знаем');
+}
+const num = 1;
+
+switch (true) {
+    case num > 0:
+        console.log('Положительный');
+        break;
+    case num < 0:
+        console.log('отрицательный');
+        break;
+    default:
+        console.log('ноль');
+} */
+/* 
+const bmwX3Price = 100000;
+const fordFocusPrice = 10000;
+const budget = 20000;
+
+let message;
+
+if (budget > 100000) {
+    message = 'BMW';
+} else if (budget > fordFocusPrice) {
+    message = 'FORD';
+} else {
+    message = 'Велосипед';
+}
+
+10 > 0 ? console.log('Больше 0') : console.log('не больше '); */
+/* if (10 > 0) {
+    console.log('Больше 0');
+} else {
+    console.log('не больше ');
+} */
+/* const str = 10 > 0 ? 'Больше 0' : 'не больше ';
+console.log(str);
+ */
+/* console.log(`я хочу купить ${message}`);
+
+console.log(`я хочу купить ${budget > bmwX3Price ? 'BMW' : 'Велосипед'}`);
+
+let message2 = budget > bmwX3Price ? 'BMW'
+    : budget > fordFocusPrice ? 'FORD'
+        : 'Велосипед';
+console.log(message2) */
+
+/* let question = prompt('Сколько будет 7 + или - 15') */
+//alert(question);
+/* if (question === '22') {
+    console.log('Успех')
+} else if (question === '-8') {
+    console.log('Успех')
+} else if (question === 'Я не робот') {
+    console.log('Успех')
+} else {
+    console.log('Вы робот')
+} */
+
+/* switch (question) {
+    case '22':
+    case '-8':
+    case 'Я не робот':
+        console.log('Успех');
+        break;
+    default:
+        console.log('Вы робот');
+} */
+/* switch (true) {
+    case Number(question) === 22:
+    case Number(question) === -8:
+    case question === 'Я не робот':
+        console.log('Успех');
+        break;
+    default:
+        console.log('Вы робот');
+} */
+
+/* const a = 5;
+if (a > 0) {
+    console.log('Yes!');
+} else if(a == 5) {
+    console.log('No!');
+} */
+const a = 5;
+switch(a) {
+    case '5':
+        console.log('1');
+    case 5:
+        console.log('2');
+    case 4:
+        console.log('2');
+}
+
+/* const isAdmin = true;
+const canWrite = true;
+
+
+console.log(`Системный файл ${isAdmin && canWrite}`);//&& - и
+console.log(`Обычный файл ${isAdmin || canWrite}`);//||  - или
+console.log(`Инвертируем права админа ${!isAdmin}`);//! - инвертирование значения
+
+const isEdited = true;
+const isSuperAdmin = true;
+
+console.log(`Системный файл с редактированием ${isAdmin && canWrite && (!isEdited || isSuperAdmin)
+    }`); */
+
+/* console.log('Вася' || 'Олег');
+console.log(false || 'Олег');
+
+console.log('Вася' && 'Олег');
+console.log(false && 'Олег');
+
+let a = 'Марина';
+const username = a || 'Петя';
+console.log(username) */
+
+/* 
+let username = 0;
+console.log(username || 'Default Username');
+console.log(username ?? 'Default Username');
+ */
+//let canBuy = true;
+/* let balanceUser = 1001;
+let bonusUser = 101;
+
+let isBanned = false;
+let isExist = true;
+let isSelling = true;
+
+if ((balanceUser >= 1000 || balanceUser >= 100) && isExist === true && isSelling === true && isBanned === false) {
+    console.log(`Может купить игру`);
+} else {
+    console.log(`Не может купить игру`);
+} */
+/* console.log(!'' && true && 'Yes' && Boolean('true') && 'PS') */

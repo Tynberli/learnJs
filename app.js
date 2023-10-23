@@ -1,6 +1,6 @@
-const x1 = 10;
-const x2 = 20;
-const y1 = 20;
-const y2 = 20;
+let hasLicence = true;
+let age = 21;
+let isDrunk = false;
 
-console.log(Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1)));
+let canDrive = (hasLicence && age >= 18 && !isDrunk);
+console.log(`${canDrive ? 'Может' : 'Не может'} водить машину`);
