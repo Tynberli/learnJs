@@ -1,0 +1,31 @@
+Index: app.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>let hasLicence = true;\r\nlet age = 21;\r\nlet isDrunk = false;\r\n\r\nlet canDrive = (hasLicence && age >= 18 && !isDrunk);\r\nconsole.log(`${canDrive ? 'Может' : 'Не может'} водить машину`);
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app.js b/app.js
+--- a/app.js	
++++ b/app.js	
+@@ -1,6 +1,13 @@
+-let hasLicence = true;
+-let age = 21;
+-let isDrunk = false;
++function logName(name, surname) {
++    console.log(`Моё имя ${name} ${surname}`)
++}
++logName('Александр', 'Федорчук');
++
+ 
+-let canDrive = (hasLicence && age >= 18 && !isDrunk);
+-console.log(`${canDrive ? 'Может' : 'Не может'} водить машину`);
+\ No newline at end of file
++function countDepositSum(depositInUsd, mouth, rate) {
++    const sum = depositInUsd * (1 + rate / 12) ** mouth;
++    return sum;
++}
++
++const example1 = countDepositSum(1000,24,0.12);
++console.log(example1);
+\ No newline at end of file
