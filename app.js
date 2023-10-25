@@ -1,6 +1,6 @@
-const x1 = 10;
-const x2 = 20;
-const y1 = 20;
-const y2 = 20;
+const positionLat = 10;
+const positionLong = 20;
+const addresslat = 20;
+const addresslong = 20;
 
-console.log(Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1)));
+console.log(Math.sqrt((positionLong - positionLat) * (positionLong - positionLat) + (addresslong - addresslat) * (addresslong - addresslat)));
