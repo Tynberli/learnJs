@@ -1,16 +1,15 @@
-//const question = prompt('Добрый день');
-let languageWindow = navigator.language;
-//console.log(languageWindow)
-switch (languageWindow) {
-    case "ru":
+const question = prompt('На каком языке вы говорите?');
+
+switch (question) {
+    case "русский":
         console.log('Добрый день');
         break;
-    case "en-US":
+    case "английский":
         console.log('Hello!');
         break;
-    case "de-DE":
+    case "немецкий":
         console.log('Gutten tag');
         break;
     default:
-        console.log(undefined);
+        console.log('Я не знаю такой язык(');
 }
