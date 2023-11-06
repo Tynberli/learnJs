@@ -1,15 +1,29 @@
-function converter(cash = 1000, well, currency) {
-    switch (true) {
-        case currency === "USD":
-        case currency === "EU":
-        case currency === "CNY":
-            return cash / well;
-        default:
-            return null;
+const passwordUser = 'qwer1234';
+console.log(passwordUser);
+
+function crypto(password) {
+    let arr = password.split('');
+    let random = arr.reverse();
+    let str = random.join('');
+    return str;
+}
+
+let cryptoPass = crypto(passwordUser);
+
+console.log(cryptoPass);
+
+function check(cryptoPass, password) {
+
+    let arr2 = cryptoPass.split('');
+    let reverte = arr2.reverse();
+    let str2 = reverte.join('');
+    console.log(str2);
+
+    if (str2 === password) {
+        return true;
+    } else {
+        return false;
     }
 }
 
-console.log(converter(1000, 93.68, "USD"));
-console.log(converter(1000, 98.71, "EU"));
-console.log(converter(1000, 13.07, "CNY"));
-console.log(converter(1000, 113.51, "GBR"));
+console.log(check(cryptoPass, 'qwer1234'));
