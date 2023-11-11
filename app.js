@@ -1,29 +1,16 @@
-const passwordUser = 'qwer1234';
-console.log(passwordUser);
+const arr = [1, 40, -5, 10, 0];
 
-function crypto(password) {
-    let arr = password.split('');
-    let random = arr.reverse();
-    let str = random.join('');
-    return str;
-}
-
-let cryptoPass = crypto(passwordUser);
-
-console.log(cryptoPass);
-
-function check(cryptoPass, password) {
-
-    let arr2 = cryptoPass.split('');
-    let reverte = arr2.reverse();
-    let str2 = reverte.join('');
-    console.log(str2);
-
-    if (str2 === password) {
-        return true;
-    } else {
-        return false;
+function bubbleSort(arr) {
+    for (let i = 0; i < arr.length - 1; i++) {
+        for (let j = 0; j < arr.length - 1 - i; j++) {
+            if (arr[j] > arr[j + 1]) {
+                const temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
     }
+    return arr;
 }
 
-console.log(check(cryptoPass, 'qwer1234'));
+console.log(bubbleSort(arr));
