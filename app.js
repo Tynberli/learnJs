@@ -1,16 +1,10 @@
-const arr = [1, 40, -5, 10, 0];
+const arr = [1, -7, 3, -5, 10, 0];
 
-function bubbleSort(arr) {
-    for (let i = 0; i < arr.length - 1; i++) {
-        for (let j = 0; j < arr.length - 1 - i; j++) {
-            if (arr[j] > arr[j + 1]) {
-                const temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-            }
-        }
-    }
-    return arr;
+const filterRange = (arr, a) => {
+    return arr.filter(item => (a <= item));
 }
 
-console.log(bubbleSort(arr));
+let filtered = filterRange(arr, 0);
+console.log(arr);
+console.log(filtered);
+
