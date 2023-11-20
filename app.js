@@ -1,15 +1,14 @@
-function converter(cash = 1000, well, currency) {
-    switch (true) {
-        case currency === "USD":
-        case currency === "EU":
-        case currency === "CNY":
-            return cash / well;
-        default:
-            return null;
+function convert(cash, well, currency) {
+    if (currency === "USD" || currency === "EU" || currency === "CNY") {
+        return cash / well;
+    } else {
+        return null;
     }
 }
 
-console.log(converter(1000, 93.68, "USD"));
-console.log(converter(1000, 98.71, "EU"));
-console.log(converter(1000, 13.07, "CNY"));
-console.log(converter(1000, 113.51, "GBR"));
+const operations = (cash = 1000, well, currency) => dollar = convert(cash, well, currency);
+
+console.log(operations(1000, 93.68, "USD"));
+console.log(operations(1000, 98.71, "EU"));
+console.log(operations(1000, 13.07, "CNY"));
+console.log(operations(1000, 113.51, "GBR"));
