@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="254ea3c3-9666-4252-8795-58381cc76af7" name="Changes" comment="переделал задание">
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trash.txt" beforeDir="false" />
+    <list default="true" id="254ea3c3-9666-4252-8795-58381cc76af7" name="Changes" comment="тест">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,14 +29,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="назвал переменные">
@@ -61,8 +60,17 @@
       <option name="presentableId" value="Default" />
       <updated>1698226708308</updated>
       <workItem from="1698226708308" duration="8000" />
+      <workItem from="1703528208714" duration="683000" />
+      <workItem from="1703612055304" duration="602000" />
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="тест">
+      <created>1703528257017</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703528257017</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,6 +90,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="назвал переменные" />
     <MESSAGE value="переделал задание" />
-    <option name="LAST_COMMIT_MESSAGE" value="переделал задание" />
+    <MESSAGE value="тест" />
+    <option name="LAST_COMMIT_MESSAGE" value="тест" />
   </component>
 </project>

@@ -11,7 +11,27 @@
 <p>сделал ветку с первым заданием</p>
 
 <body>
+    <div class="swiper product__swiper">
+        <div class="swiper-pagination-title">
+            <?php foreach ($arResult['ITEMS'] as $arItem): ?>
+            <a href="#<?= isset($arItem['NAME']) ? $arItem['NAME'] : ''; ?>" class="swiper-pagination-title-item">
+                <?= isset($arItem['NAME']) ? $arItem['NAME'] : ''; ?>
+            </a>
+            <?php endforeach; ?>
+        </div>
 
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
+                <div class="swiper-slide-content">
+                    <div class="swiper-slide-content-descr">
+                        <h3 class="swiper-slide-content-descr-title">
+                            <?= isset($arItem['NAME']) ? $arItem['NAME'] : ''; ?>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
