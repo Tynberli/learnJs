@@ -1,25 +1,26 @@
-const card = '4561-2612-1234-5464';
-const card2 = '5561-2612-1234-5464';
-function luna(card) {
-    const delTrash = card.replaceAll('-', '').split('').map(Number);
-    console.log(delTrash);
-    if (delTrash.length === 16) {
-        for (let i = delTrash.length - 2; i >= 0; i -= 2) {
-            console.log(i);
-            delTrash[i] *= 2;
+/* Написать функцуию которая принимает обхект query параметров и возвращает строку для вставки
+{
+    search: 'Вася', 
+    take: 10,
+} 
+//search=Вася&take=10
+*/
 
-            if (delTrash[i] > 9) {
-                delTrash[i] -= 9;
-            }
+function buildQueryString(query) {
+    let queryString = '';
+    for (let key in query) {
+        if (queryString !== '') {
+            queryString += '&';
         }
-        let sum = delTrash.reduce(function (acc, curr) {
-            return acc + curr;
-        }, 0);
-        console.log(sum);
-        return sum % 10 === 0;
+        queryString += `${key}=${query[key]}`;
     }
-    else {
-        return false;
-    }
+    return queryString;
 }
-console.log(luna(card));
+
+const query = {
+    search: 'Вася',
+    take: 10,
+};
+
+const queryString = buildQueryString(query);
+console.log(queryString); // search=Вася&take=10
