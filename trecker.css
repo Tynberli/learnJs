@@ -1,0 +1,221 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer; background: none;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+body{
+    font-family: 'Comfortaa', cursive;
+    background-color: #f3f6fd;
+}
+
+.app {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+}
+.panel {
+    background-color: #FBFAFF;
+    padding: 30px ;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.menu__list-item {
+    border-radius: 14px;
+    background-color: #FFF;
+    box-shadow: 0px 8px 14px 0px rgba(62, 107, 224, 0.12);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
+}
+.menu__list-item img {
+    transition: 300ms;
+}
+.menu__list-item:hover {
+    background-color: #6A6AFB;
+}
+.menu__list-item:hover img{
+    filter: brightness(0) invert(1);
+}
+.menu__list-item--active{
+    background-color: #5051F9;
+}
+.menu__list-item--active img{
+    filter: brightness(0) invert(1);
+}
+.menu__list-item-link {
+    width: 100%;
+    height: 100%;
+}
+.menu__add {
+    background-color: transparent;
+    border-radius: 14px;
+    border: 1px solid #CAD5FF;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
+}
+.menu__add:hover {
+    background-color: #5051F9;
+}
+.content {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+.header {
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+}
+.h1 {
+    font-size: 30px;
+}
+.progress {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.progress__text {
+    display: flex;
+    gap: 120px;
+    align-items: center;
+}
+.progress__name {
+    color: #232360;
+    font-size: 14px;
+}
+.progress__percent {
+    color: #768396;
+    font-size: 12px;
+}
+.progress__bar {
+    border-radius: 4px;
+    background: #E6E9ED;
+    height: 5px;
+    position: relative;
+
+}
+.progress__cover-bar {
+    position: absolute;
+    left: 0;
+    width: 80%;
+    top: 0;
+    height: 5px;
+    border-radius: 4px;
+    background: #5051F9;
+}
+
+.main {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.habbit {
+    border-radius: 10px;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    height: 54px;
+    overflow: hidden;
+    padding-right: 40px;
+}
+.habbit__day {
+    background-color: #FBFAFF;
+    height: 100%;
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    border-right: #E7EBFB;
+    white-space: nowrap;
+}
+.habbit__comment {
+    padding: 20px 40px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.habbit__delete {
+    margin-left: auto;
+}
+.habbit__form{
+    display: flex;
+    padding: 20px 0 20px 40px;
+    font-size: 16px;
+    font-weight: 500;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+}
+.input_icon{
+    border-radius: 9px;
+    border: 1px solid #E7EBFB;
+    background-color: #FFF;
+    width: 100%;
+    padding: 10px 20px;
+
+}
+.habbit__done{
+    margin-left: auto;
+    border-radius: 9px;
+    background-color: #EDECFE;
+    color: #5051F9;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 14px 33px;
+}
