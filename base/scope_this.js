@@ -1,5 +1,5 @@
 'use strict'
-/* const succesMessage = 'Успех';
+const succesMessage = 'Успех';
 const user = {
     name: 'vasya',
     roles: [],
@@ -13,7 +13,7 @@ function addRole(user, role) {
     user.role.push(role);
     succesMessage = 'uar'
     console.log(succesMessage);
-    
+
     function logRoles() {
         console.log(user.roles)
     }
@@ -21,22 +21,22 @@ function addRole(user, role) {
     return user;
 }
 
-console.log(addRole(user, 'dev')) */
+console.log(addRole(user, 'dev'))
 
 //поднятие
-/* addUser();
+addUser();
 console.log(b);
 const a = 3;
 var b = 2;
 function addUser() {
     // console.log('user added')
 }
-addUser(); */
+addUser();
 
 //Пример использования this
-//console.log(this);
+console.log(this);
 
-/* function addNum(num1, num2) {
+function addNum(num1, num2) {
     console.log(this);
     return num1 + num2;
 }
@@ -66,8 +66,10 @@ user2.getFullName = user.getFullName;
 user2.getFullName();
 
 const getFullName = user2.getFullName;
-getFullName(); */
-/* const user = {
+getFullName();
+
+
+const user = {
     firstName: 'vasya',
     lastName: 'pupkin',
     age: 20,
@@ -79,7 +81,7 @@ getFullName(); */
     }
 }
 user.getUserInfo();
-user.getUserInfoArrow(); */
+user.getUserInfoArrow();
 
 
 /*Дополнить объект методом для получения имени:
@@ -87,7 +89,7 @@ user.getUserInfoArrow(); */
 - сео
 - сотрудника*/
 
-/* const company = {
+const company = {
     name: "ООО Агро",
     employees: [
         {
@@ -108,11 +110,13 @@ user.getUserInfoArrow(); */
     }
 };
 
-console.log(company.getName())
-console.log(company.ceo.getName())
-console.log(company.employees.map(employees => employees.getName())) */
+console.log(company.getName());
+console.log(company.ceo.getName());
+console.log(company.employees.map(employees => employees.getName()));
 
-/* const b = 1;
+//EOL для методов
+
+const b = 1;
 const a = {
     b,
     getB: function () {
@@ -122,10 +126,10 @@ const a = {
         return this.b;
     }
 }
-console.log(a.getBAlt()); */
+console.log(a.getBAlt());
 
 //Call, apply
-/* const audi = {
+const audi = {
     make: 'Audi',
     model: 'AZ',
     year: 2021,
@@ -157,10 +161,10 @@ addDamageFunc.call(audi, 'стекло', 3);
 
 
 addDamageFunc.apply(bmw, ['бампер2', 4])
-addDamageFunc.apply(audi, ['стекло3', 5]) */
+addDamageFunc.apply(audi, ['стекло3', 5])
 
 //Bind
-/* const audi = {
+const audi = {
     make: 'Audi',
     model: 'AZ',
     damages: [],
@@ -178,13 +182,13 @@ console.log(audi);
 
 const addDamageAudiRoof = carManupulation.addDamage.bind(audi, 'Крыша');
 addDamageAudiRoof(5);
-console.log(audi); */
+console.log(audi);
 
 /*Создайте объект пользователя с паролем.
 С помощью функции ниже удалить пароль сделав
 функцию сброса пароля*/
 
-/* function removePassword(reset) {
+function removePassword(reset) {
     if (reset) {
         this.password = undefined;
     } else {
@@ -197,9 +201,11 @@ const user = {
 }
 const resetUserPass = removePassword.bind(user, true);
 resetUserPass();
-console.log(user); */
+console.log(user);
+
+
 //IIFE
-/* 
+
 function init() {
     console.log('Start')
 };
@@ -207,9 +213,9 @@ init();
 
 (function () {
     console.log('Start IIFE')
-}); */
+});
 //Замыкания
-/* 
+
 function changeBalance() {
     let balance = 0;
     let key = 'asd';
@@ -228,7 +234,7 @@ change(200);
 console.dir(change);
 const change2 = changeBalance();
 change2(100);
-console.dir(change2); */
+console.dir(change2);
 //
 /* Сделать функию пользователя которая берет за основу 
 userInfo и за счет замыкания создает новый объект, 
